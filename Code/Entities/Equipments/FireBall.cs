@@ -26,7 +26,7 @@ namespace Celeste.Mod.HeartWars.Entities.Equipments {
             : base(Vector2.Zero) {
             Tag |= Tags.PauseUpdate;
             Add(sprite = GFX.SpriteBank.Create("HeartWarsFireBall"));
-			base.Depth = -1000000;
+            base.Depth = -1000000;
             base.Collider = new Hitbox(8f, 8f, -4f, -4f);
             Add(new PlayerCollider(OnPlayer));
         }
@@ -41,7 +41,7 @@ namespace Celeste.Mod.HeartWars.Entities.Equipments {
             this.maxTime = 20f;
             this.shootTime = 0f;
             this.dead = false;
-			this.sprite.Play("idle", true, false);
+            this.sprite.Play("idle", true, false);
             return this;
         }
 
@@ -77,8 +77,8 @@ namespace Celeste.Mod.HeartWars.Entities.Equipments {
             explode();
         }
 
-		public override void Update() {
-			base.Update();
+        public override void Update() {
+            base.Update();
             if (dead) return;
             Vector2 dest = this.Position + target * moveSpeed * Engine.DeltaTime;
             shootTime += Engine.DeltaTime;
@@ -94,6 +94,6 @@ namespace Celeste.Mod.HeartWars.Entities.Equipments {
             if (base.Scene.OnInterval(0.05f)) {
                 this.level.ParticlesFG.Emit(particleType, 1, base.Center, Vector2.One * 2f, target.Angle());
             }
-		}
+        }
     }
 }

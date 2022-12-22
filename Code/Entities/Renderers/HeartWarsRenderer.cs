@@ -291,6 +291,6 @@ namespace Celeste.Mod.HeartWars.Entities.Renderers {
 
             if (Tracking == null || Tracking?.Scene != Scene)
                 RemoveSelf();
-		}
+        }
     }
 }

@@ -308,8 +308,8 @@ namespace Celeste.Mod.HeartWars.Controllers {
             if (PlayerInfo.PlayerTeam == "BLUE" && GameController.BlueTeamPlayers.Contains(nameTag.Name.Trim())) orig(nameTag);
         }
 
-		private delegate void orig_HandleMessage(CelesteNetChatComponent self, CelesteNetConnection con, DataChat msg);
-		private void CelesteNetChatComponentHandleHook(orig_HandleMessage orig, CelesteNetChatComponent self, CelesteNetConnection con, DataChat msg) {
+        private delegate void orig_HandleMessage(CelesteNetChatComponent self, CelesteNetConnection con, DataChat msg);
+        private void CelesteNetChatComponentHandleHook(orig_HandleMessage orig, CelesteNetChatComponent self, CelesteNetConnection con, DataChat msg) {
             for (int i = 0; i < self.Log.Count; i++) {
                 if (i >= self.Log.Count) break;
                 if (self.Log[i]?.Text?.Contains(HeartWarsModule.IdentifyCode) == true) {
@@ -338,7 +338,7 @@ namespace Celeste.Mod.HeartWars.Controllers {
                 GameController.onPlayerExit(msg.Text.Trim().Substring(4).Trim());
             }
             orig(self, con, msg);
-		}
+        }
 
         private static Color onGetHairColor(On.Celeste.PlayerHair.orig_GetHairColor orig, PlayerHair self, int index) {
             Color colorOrig = orig(self, index);

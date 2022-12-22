@@ -48,7 +48,7 @@ namespace Celeste.Mod.HeartWars.Entities.Equipments {
             : base(Vector2.Zero) {
             Tag |= Tags.PauseUpdate;
             Add(sprite = GFX.SpriteBank.Create("badeline_projectile"));
-			base.Depth = -1000000;
+            base.Depth = -1000000;
             base.Collider = new Hitbox(8f, 8f, -4f, -4f);
             Add(new PlayerCollider(OnPlayer));
         }
@@ -63,7 +63,7 @@ namespace Celeste.Mod.HeartWars.Entities.Equipments {
             this.maxTime = maxTime;
             this.shootTime = 0f;
             this.id = id;
-			this.sprite.Play("charge", true, false);
+            this.sprite.Play("charge", true, false);
             return this;
         }
 
@@ -94,8 +94,8 @@ namespace Celeste.Mod.HeartWars.Entities.Equipments {
                 this.RemoveSelf();
             }
         }
-		public override void Update() {
-			base.Update();
+        public override void Update() {
+            base.Update();
             Vector2 dest = this.Position + target * moveSpeed * Engine.DeltaTime;
             shootTime += Engine.DeltaTime;
             if (shootTime > 0.2f && base.CollideCheck<Ghost>(dest)) {
@@ -111,11 +111,11 @@ namespace Celeste.Mod.HeartWars.Entities.Equipments {
             if (base.Scene.OnInterval(0.01f)) {
                 if (this.shooterTeam == "RED") {
                     this.level.ParticlesFG.Emit(RedTeam, 1, base.Center, Vector2.One * 2f, target.Angle());
-				}
+                }
                 else  {
                     this.level.ParticlesFG.Emit(BlueTeam, 1, base.Center, Vector2.One * 2f, target.Angle());
-				}
+                }
             }
-		}
+        }
     }
 }

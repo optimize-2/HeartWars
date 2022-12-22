@@ -25,7 +25,7 @@ namespace Celeste.Mod.HeartWars.Entities.Equipments {
             : base(Vector2.Zero) {
             Tag |= Tags.PauseUpdate;
             Add(sprite = GFX.SpriteBank.Create("HeartWarsBadPearl"));
-			base.Depth = -1000000;
+            base.Depth = -1000000;
             base.Collider = new Hitbox(20f, 20f, -10f, -10f);
             Add(new PlayerCollider(OnPlayer));
         }
@@ -40,7 +40,7 @@ namespace Celeste.Mod.HeartWars.Entities.Equipments {
             this.maxTime = 20f;
             this.shootTime = 0f;
             this.dead = false;
-			this.sprite.Play("idle", true, false);
+            this.sprite.Play("idle", true, false);
             return this;
         }
 
@@ -66,8 +66,8 @@ namespace Celeste.Mod.HeartWars.Entities.Equipments {
             this.RemoveSelf();
         }
 
-		public override void Update() {
-			base.Update();
+        public override void Update() {
+            base.Update();
             if (dead) return;
             Vector2 dest = this.Position + target * moveSpeed * Engine.DeltaTime;
             shootTime += Engine.DeltaTime;
@@ -80,6 +80,6 @@ namespace Celeste.Mod.HeartWars.Entities.Equipments {
             } else {
                 teleport();
             }
-		}
+        }
     }
 }
