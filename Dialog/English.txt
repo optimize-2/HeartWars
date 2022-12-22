@@ -1,0 +1,34 @@
+modname_OPTIMIZE2_HEARTWARS= Heart Wars
+endscreen_collabname_OPTIMIZE2_HEARTWARS= HeartWars
+
+HeartWars_1_HEARTWARS_HW_01= Quakeste
+HeartWars_1_HEARTWARS_HW_02= Crumbling Warsite
+HeartWars_1_HEARTWARS_HW_03= Working in Progress
+HeartWars_1_HEARTWARS_HW_04= No Man's Ridge
+HeartWars_0_Lobbies_1_HeartWars= Heart Wars
+HeartWars_0_Lobbies= Heart Wars
+
+OPTIMIZE2_HEARTWARS= Heart Wars
+OPTIMIZE2_HEARTWARS_START_GAME= Start Game
+OPTIMIZE2_HEARTWARS_START_GAME_EXIST= The area is already exists, please wait or select other areas!
+OPTIMIZE2_HEARTWARS_START_GAME_NO_TEAM= Please select a team before matching
+OPTIMIZE2_HEARTWARS_START_GAME_WAITING= Matching...
+OPTIMIZE2_HEARTWARS_START_GAME_FAIL_RED= Not enough players for team red
+OPTIMIZE2_HEARTWARS_START_GAME_FAIL_BLUE= Not enough players for team blue
+OPTIMIZE2_HEARTWARS_WIN_RED= Red team wins!
+OPTIMIZE2_HEARTWARS_WIN_BLUE= Blue team wins!
+OPTIMIZE2_HEARTWARS_BUY_FAILED_MONEY= Golds are not enough!
+OPTIMIZE2_HEARTWARS_BUY_FAILED_HAVE= You've already had this stuff!
+OPTIMIZE2_HEARTWARS_BUY_SUCCESS= You bought 1x
+OPTIMIZE2_HEARTWARS_NODIALOG= You shouldn't see this!
+OPTIMIZE2_HEARTWARS_GOLDENSTRAWBERRY= Golden Straweberry
+OPTIMIZE2_HEARTWARS_FIREBALL= Fire Ball
+OPTIMIZE2_HEARTWARS_BADPEARL= Badline Pearl
+OPTIMIZE2_HEARTWARS_ANNOUNCEMENT_0= Anoucement
+OPTIMIZE2_HEARTWARS_ANNOUNCEMENT_1= 1. Do not CHEAT bro (e.g. using Extended Variant)!
+OPTIMIZE2_HEARTWARS_ANNOUNCEMENT_2= 2. Do not toggle CelesteNet in the map frequently.
+OPTIMIZE2_HEARTWARS_ANNOUNCEMENT_3= 3. Do not use /tp and f6 while you are playing.
+OPTIMIZE2_HEARTWARS_ANNOUNCEMENT_4= 4. Please ensure that the network connection is smooth.
+OPTIMIZE2_HEARTWARS_ANNOUNCEMENT_5= 5. Have fun!
+OPTIMIZE2_HEARTWARS_ANNOUNCEMENT_6= 6. For feedback and questions, QQ group: 791519346.
+OPTIMIZE2_HEARTWARS_VERSION= HeartWars V1.0.2

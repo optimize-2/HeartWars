@@ -1,0 +1,7 @@
+# Sample Entity
+entities.HeartWars/SampleEntity.placements.name.normal=Sample Entity (HeartWars)
+entities.HeartWars/SampleEntity.attributes.description.sampleProperty=A sample property for your entity.
+
+# Sample Trigger
+triggers.HeartWars/SampleTrigger.placements.name.normal=Sample Trigger (HeartWars)
+triggers.HeartWars/SampleTrigger.attributes.description.sampleProperty=A sample property for your trigger.

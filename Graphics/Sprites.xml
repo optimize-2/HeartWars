@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Sprites>
+  <HeartWarsFireBall path="HeartWars/HeartWarsFireBall/">
+    <Center/>
+    <Anim id="idle" path="idle" delay="0.1" frames="0" />
+    <Anim id="explode" path="explode" delay="0.2" frames="0-3" />
+  </HeartWarsFireBall>
+  <HeartWarsBadPearl path="HeartWars/HeartWarsBadPearl/">
+    <Center/>
+    <Anim id="idle" path="idle" delay="0.1" frames="00-25" />
+  </HeartWarsBadPearl>
+  <Shop path="HeartWars/Shop/">
+    <Center/>
+    <Anim id="idle" path="idle" delay="0.1" frames="0" />
+  </Shop>
+  <FireBallShop path="HeartWars/FireBallShop/">
+    <Center/>
+    <Anim id="idle" path="idle" delay="0.1" frames="0" />
+  </FireBallShop>
+</Sprites>
